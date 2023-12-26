@@ -1,0 +1,54 @@
+# The Need for Speed - ECE-GY 6483 Embedded Challenge
+
+## Project Overview
+This project, "The Need for Speed," is developed by Group 1 for the ECE-GY 6483 Embedded Challenge. It features a system that measures and records gyroscopic data to calculate linear velocity and distance traveled. This data is then displayed on an LCD screen attached to the STM32F429ZI development board.
+
+### Team Members
+- Ye Ye
+- Ruanxiao He
+- Samin Ghasemi
+
+## Installation
+
+### Prerequisites
+- Mbed OS
+- STM32F429ZI development board
+- Gyroscope sensor
+- Required Libraries: `LCD_DISCO_F429ZI`, `mbed.h`, `cmath`, `chrono`
+
+### Hardware Setup
+1. Connect the gyroscope sensor to the STM32F429ZI board following the designated pin configuration.
+2. Ensure the LCD screen is properly connected and configured.
+
+### Software Setup
+1. Clone the repository to your local machine.
+2. Open the project using an Mbed-compatible IDE or compiler.
+3. Compile the code and upload it to the STM32F429ZI board.
+
+## Usage
+1. Press the button on the board to start the recording phase.
+2. Perform the motion or gesture to be measured.
+3. The system will record the gyroscopic data and calculate the linear velocity and total distance traveled.
+4. This data is displayed on the LCD screen.
+5. Press the button again to reset or restart the measurement process.
+
+## File Structure
+- `main.cpp`: Contains the main logic and flow control for the data recording and processing.
+- `LCD_DISCO_F429ZI.h`: Library for controlling the onboard LCD display.
+
+## Features
+- Real-time gyroscopic data measurement.
+- Calculation of linear velocity and distance traveled.
+- Data visualization on an LCD screen.
+- Reset and restart functionality for repeated measurements.
+
+## Troubleshooting
+- LCD Display Issues: Ensure the LCD is correctly connected and initialized in the code.
+- Sensor Data Accuracy: Verify the gyroscope sensor is calibrated and functioning correctly.
+
+ License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+# Acknowledgments
+Special thanks to the ECE-GY 6483 course instructors and assistants, and to all team members for their contributions.
+
